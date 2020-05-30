@@ -6,9 +6,9 @@ export default class GitList extends React.Component {
     return (
       <div>
       <ul>
-      <li>
-      
-      </li>
+      {this.props.state.api.map(el => {
+        <li>{el.data}</li>
+      })}
       </ul>
       </div>
       )
