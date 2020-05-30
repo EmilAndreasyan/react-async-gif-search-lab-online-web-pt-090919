@@ -6,7 +6,9 @@ export default class GitList extends React.Component {
     return (
       <div>
       <ul>
-      <li></li>
+      <li>
+      
+      </li>
       </ul>
       </div>
       )
