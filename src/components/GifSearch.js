@@ -11,7 +11,7 @@ export default class GifSearch extends React.Component {
   render(){
     return (
       <form onSubmit={this.props.handleSubmit}>
-      <input type="text" value={this.state.username}/>
+      <input type="text" id="username" value={this.state.username} on/>
       </form>
       )
   }
