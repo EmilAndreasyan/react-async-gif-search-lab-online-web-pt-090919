@@ -1,5 +1,6 @@
 import React from 'react';
 import GiftList from './components/GiftList'
+import GifSearch from './components/GifSearch'
 
 export default class GiftListContainer extends React.Component {
   this.state = {
@@ -19,6 +20,7 @@ export default class GiftListContainer extends React.Component {
   render(){
     return(
       <GiftList data={this.state.api}/>
+      <GifSearch />
       )
   }
 }
