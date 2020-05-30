@@ -1,4 +1,5 @@
 import React from 'react';
+import GiftList from './components/GiftList'
 
 export default class GiftListContainer extends React.Component {
   this.state = {
@@ -17,7 +18,7 @@ export default class GiftListContainer extends React.Component {
   
   render(){
     return(
-      <div>{this.state.api}</div>
+      <GiftList data={this.state.api}/>
       )
   }
 }
