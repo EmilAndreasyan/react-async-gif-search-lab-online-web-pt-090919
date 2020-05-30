@@ -3,8 +3,7 @@ import React from 'react';
 export default class GifSearch extends React.Component {
   
   state = {
-    username: '',
-    password: ''
+  search: ''
   }
   
   handleChange = event => {
@@ -17,7 +16,7 @@ export default class GifSearch extends React.Component {
   render(){
     return (
       <form onSubmit={this.props.handleSubmit}>
-      <input type="text" id="username" value={this.state.username} onChange={this.handleChange}/>
+      <input type="text" id="search" value={this.state.search} onChange={this.handleChange}/>
       </form>
       )
   }
