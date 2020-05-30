@@ -9,7 +9,9 @@ export default class GifSearch extends React.Component {
   
   handleChange = event => {
     event.persist()
-    
+    this.setState({
+      [event.target.id]: event.target.value
+    })
   }
   
   render(){
