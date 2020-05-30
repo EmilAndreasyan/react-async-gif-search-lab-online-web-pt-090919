@@ -31,7 +31,7 @@ export default class GiftListContainer extends React.Component {
   render(){
     return(
       <GiftList data={this.state.api}/>
-      <GifSearch onSubmit={this.handleSubmit}/>
+      <GifSearch {this.handleSubmit}/>
       )
   }
 }
