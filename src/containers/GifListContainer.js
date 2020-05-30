@@ -19,6 +19,13 @@ export default class GiftListContainer extends React.Component {
   
   handleSubmit = event => {
     event.preventDefault()
+    fetch('https://api.giphy.com/v1/gifs/search?q=dolphin&api_key=mIuSfstFtNcWfvBo9cjiaDeIf6YltBOU&rating=g', {
+      method: 'post',
+      headers: {
+        'Content-type': 'application/json'
+      }
+      body: JSON.stringify(this.state)
+    })
   }
   
   render(){
