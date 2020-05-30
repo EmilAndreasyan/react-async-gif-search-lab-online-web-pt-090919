@@ -17,10 +17,14 @@ export default class GiftListContainer extends React.Component {
     })
   }
   
+  handleSubmit = event => {
+    event.preventDefault()
+  }
+  
   render(){
     return(
       <GiftList data={this.state.api}/>
-      <GifSearch />
+      <GifSearch onSubmit={this.handleSubmit}/>
       )
   }
 }
